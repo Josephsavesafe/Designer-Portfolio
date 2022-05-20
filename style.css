@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #DEDEDE;
+    font-family: 'Manrope', sans-serif;
+}
+
+html {
+    font-size: calc(60% + 0.8vmin);
+}
+
+:root {
+    --mainwidth: clamp(22rem, 88%, 78rem);
+}
+
+body {
+    background-color: #202020;
+}
+
+nav {
+    padding: 0 6.813rem 0 6rem;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #323232;
+}
+
+/* -----------nav------------- */
+nav span {
+    font-weight: 800;
+    font-size: 1.25rem;
+}
+
+.navlink a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+.navlink a:not(.lastlink) {
+    margin-right: 3.125rem;
+}
+
+/* -----------header------------- */
+header {
+    max-width: var(--mainwidth);
+    margin: 8.063rem auto 0;
+}
+
+.headcontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headcontainer p:nth-child(1) {
+    font-weight: 700;
+    font-size: 3.375rem;
+}
+
+.headcontainer p:nth-child(2) {
+    margin-top: 1.5rem;
+    max-width: 29.6875rem;
+    letter-spacing: -0.5px;
+
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #959595;
+}
+
+.btnemail {
+    margin-top: 5.5rem;
+    width: 18.313rem;
+    height: 3.563rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.25rem;
+    background-color: #9d9d9d;
+}
+
+.btnemail a {
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.imageuser {
+    width: clamp(18rem, 40%, 25rem);
+    height: clamp(18rem, 40%, 25rem);
+    margin: 0 5rem 5rem 0;
+}
+
+.Featured {
+    max-width: var(--mainwidth);
+    margin: 9.813rem auto 0;
+    display: grid;
+    grid-template-columns: 1.5rem 1fr;
+}
+
+/* -----------main-----------  */
+main {
+    max-width: var(--mainwidth);
+    margin: 5rem auto 0;
+}
+
+/* -----------section1------------- */
+.container1 {
+    height: 121.125rem;
+}
+
+.gridsec1 img {
+    width: 100%;
+}
+
+.gridsec1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
+    gap: 1rem;
+}
+
+.imgsec1 {
+    margin-top: 1rem;
+}
+
+.sec1col2 {
+    align-self: flex-end;
+}
+
+.h {
+    margin: 15rem auto 0;
+}
+
+.h p {
+    font-weight: 700;
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+/* -----------section2------------- */
+.gridsec2 img {
+    width: 100%;
+}
+
+.gridsec2 {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+}
+
+/* -----------section3------------- */
+.gridsec3 img {
+    width: 100%;
+}
+
+/* -----------section4------------- */
+.section4 p {
+    margin-top: 1.5rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-align: center;
+    color: #959595;
+}
+
+.btnsec4 {
+    margin: 2rem auto 0;
+}
+
+/* -----------footer------------- */
+
+footer {
+    margin-top: 8rem;
+    height: 7.5rem;
+    border-top: solid #696969;
+}
+
+.containerfoot {
+    margin: 3rem auto;
+    max-width: var(--mainwidth);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+.footerlink {
+    width: 18rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 48rem) and (max-width:64rem) {
+    header {
+        margin: 6rem auto 0;
+    }
+
+    .headcontainer p:nth-child(1) {
+        font-size: 2.35rem;
+    }
+
+    .headcontainer p:nth-child(2) {
+        font-weight: 500;
+    }
+
+    .btnemail {
+        margin-top: 3rem;
+    }
+
+    .imageuser {
+        margin: 0 auto 5rem;
+    }
+
+    /* main */
+    main {
+        margin: 3rem auto 0;
+    }
+
+    /* section1 */
+    .gridsec1 {
+        height: 85rem;
+    }
+
+    .h {
+        margin-top: 9rem;
+    }
+
+    .h p {
+        font-size: 2rem;
+    }
+
+    .gridsec3 .imgsec4 img {
+        margin: 0 11rem 0 11rem;
+    }
+
+}
+
+@media screen and (max-width: 47.9375rem) {
+    nav {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navlink {
+        margin-top: 1.5rem;
+    }
+
+    .navlink a {
+        margin-top: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navlink a:not(.lastlink) {
+        margin-right: 0;
+    }
+
+    /* header */
+    header {
+        margin: 4.5rem auto 0;
+    }
+
+    .headcontainer {
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+    }
+
+    .headcontainer p:nth-child(1) {
+        text-align: center;
+        font-size: 2.25rem;
+    }
+
+    .headcontainer p:nth-child(2) {
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .btnemail {
+        margin: 3rem auto 0;
+    }
+
+    .imageuser {
+        margin: 0 auto 5rem;
+    }
+
+    /* main */
+    main {
+        margin: 2.5rem auto 0;
+    }
+
+    /* section1 */
+    .gridsec1 {
+        height: auto;
+    }
+
+    .h {
+        margin-top: 7.25rem;
+    }
+
+    .h p {
+        font-size: 1.75rem;
+    }
+
+    footer {
+        margin-top: 8rem;
+        height: 12rem;
+        border-top: solid #696969;
+    }
+
+    .containerfoot {
+        margin: 3rem auto 4rem;
+        justify-content: center;
+        /* border: solid saddlebrown; */
+    }
+
+    .footerlink {
+        margin-bottom: 2rem;
+        width: 18rem;
+        display: flex;
+        justify-content: space-between;
+        /* background-color: antiquewhite; */
+    }
+}
